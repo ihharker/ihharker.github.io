@@ -57,7 +57,7 @@
         transform: rotateX(-30deg) rotateY(-30deg);
         /* Initial rotation */
 
-        animation: rotate 15s infinite linear;
+        animation: rotate 5s infinite linear;
     }
 
     .face {
@@ -67,37 +67,38 @@
         background-image: url('kris.webp');
         image-rendering: pixelated;
         background-size: cover;
-        border: 1px solid #ccc;
+        /* border: 1px solid #ccc; */
         /* Optional: to see the edges */
         opacity: 0.9;
         /* Optional: for a semi-transparent look */
     }
 
     .front {
-        transform: translateZ(100px);
+        transform: translateZ(150px);
     }
 
     .back {
-        transform: rotateY(180deg) translateZ(100px);
+        transform: rotateY(180deg) translateZ(150px);
     }
 
     .right {
-        transform: rotateY(90deg) translateZ(100px);
+        transform: rotateY(90deg) translateZ(150px);
     }
 
     .left {
-        transform: rotateY(-90deg) translateZ(100px);
+        transform: rotateY(-90deg) translateZ(150px);
     }
 
     .top {
-        transform: rotateX(90deg) translateZ(100px);
+        transform: rotateX(90deg) translateZ(150px);
     }
 
     .bottom {
-        transform: rotateX(-90deg) translateZ(100px);
+        transform: rotateX(-90deg) translateZ(150px);
     }
 
     @keyframes rotate {
+        
         from {
             transform: rotateX(0deg) rotateY(0deg);
         }
